@@ -13,14 +13,12 @@ const ApiProvider = () => {
 
         const getData = async () => {
             const res = await axios.get("http://127.0.0.1:8000/sample/");
-            setData(res.data[1]);
+            setData(res.data);
         }
 
         getData();
 
     }, []);
-
-    console.log("ApiProvider = " + data.main_text);
 
     return (
         <ApiContext.Provider value={data}>
