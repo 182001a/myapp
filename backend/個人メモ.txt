@@ -1,0 +1,4 @@
+docker imageとcontainer起動手順
+
+docker build -t [image_name] .
+docker container -d -p 8001:8002 --name [container_name] [image_name]
