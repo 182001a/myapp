@@ -1,4 +1,9 @@
 docker imageとcontainer起動手順
 
+その１
 docker build -t [image_name] .
 docker container -d -p 8001:8002 --name [container_name] [image_name]
+
+その２
+docker compose up -d
+>> localhost:8001にアクセス
